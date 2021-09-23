@@ -12,5 +12,11 @@
     "treeshakable"
   ],
   "author": "Szymon Bury",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "react": "^17.0.2"
+  }
 }

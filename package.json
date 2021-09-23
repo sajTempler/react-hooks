@@ -1,0 +1,16 @@
+{
+  "name": "@sajtempler/react-hooks",
+  "version": "0.0.1",
+  "description": "Treeshakable, modular, usefull React hooks set",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "treeshakable"
+  ],
+  "author": "Szymon Bury",
+  "license": "ISC"
+}

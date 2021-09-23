@@ -4,7 +4,7 @@
   "description": "Treeshakable, modular, usefull React hooks set",
   "main": "src/index.js",
   "scripts": {
-    "example": "parcel example/example.html"
+    "example": "parcel --dist-dir example/build example/example.html"
   },
   "keywords": [
     "react",

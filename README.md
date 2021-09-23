@@ -1,13 +1,11 @@
 # Useful React hooks
 
-- useColorPair()
+- [useColorPair()](https://github.com/sajTempler/react-hooks#usecolorpair)
 
 
 ### useColorPair
 
 Generates color for background and calculates text color to have correct contrast from any string input.
-
-example:
 
 ```js
 const App = () => {

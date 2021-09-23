@@ -2,9 +2,9 @@
   "name": "@sajtempler/react-hooks",
   "version": "0.0.1",
   "description": "Treeshakable, modular, usefull React hooks set",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example": "parcel example/example.html"
   },
   "keywords": [
     "react",
@@ -17,6 +17,8 @@
     "react": ">=16.8.0"
   },
   "devDependencies": {
-    "react": "^17.0.2"
+    "parcel": "^2.0.0-rc.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

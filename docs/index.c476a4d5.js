@@ -22981,4 +22981,4 @@ function registerExportsForReactRefresh(module) {
 
 },{"react-refresh/runtime":"fNmB3"}]},["2rAXy","dP9ym","kRP2J"], "kRP2J", "parcelRequireaf2a")
 
-//# sourceMappingURL=example.c476a4d5.js.map
+//# sourceMappingURL=index.c476a4d5.js.map

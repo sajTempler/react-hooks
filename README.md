@@ -9,7 +9,7 @@ Generates color for background and calculates text color to have correct contras
 
 example:
 
-```
+```js
 const App = () => {
   const [input, setInput] = useState("");
 

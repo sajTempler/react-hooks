@@ -14,11 +14,11 @@ const App = () => {
   /**
    * @type {{ color: string, backgroundColor: string }}
    */
-  const colors = useColorPair(input);
-  
+  const { color, backgroundColor } = useColorPair(input);
+
   return (
     <input
-      style={{ ...inputStyles, ...colors }}
+      style={{ color, backgroundColor }}
       value={input}
       onChange={(e) => setInput(e.target.value)}
     />

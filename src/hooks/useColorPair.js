@@ -8,19 +8,26 @@ import { getColors } from "../utils/digest.js";
  * @param {string} input
  * @returns {{ color: string, backgroundColor: string }}
  */
-export const useColorPair = async (input) => {
+export const useColorPair = (input) => {
   const [{ color, backgroundColor }, setColors] = useState({
-    color: "",
-    backgroundColor: "",
+    color: "initial",
+    backgroundColor: "initial",
   });
 
   useEffect(() => {
-    const calculate = async () => {
-      const { color, backgroundColor } = await getColors(input);
-      setColors({ color, backgroundColor });
-    };
+    if (!!input) {
+      const calculate = async () => {
+        const { color, backgroundColor } = await getColors(input);
+        setColors({ color, backgroundColor });
+      };
 
-    calculate();
+      calculate();
+    } else {
+      setColors({
+        color: "initial",
+        backgroundColor: "initial",
+      });
+    }
   }, [input]);
 
   return {

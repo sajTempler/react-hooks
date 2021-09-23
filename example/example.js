@@ -7,7 +7,12 @@ const inputStyles = { height: "2rem", width: "50%", fontSize: "2rem", border: "s
 
 const App = () => {
   const [input, setInput] = useState("");
+
+  /**
+   * @type {{ color: string, backgroundColor: string }}
+   */
   const colors = useColorPair(input);
+  
   return (
     <input
       style={{ ...inputStyles, ...colors }}

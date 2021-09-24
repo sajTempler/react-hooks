@@ -1,3 +1,4 @@
-.parcel-cache/
-example/
-src/
+.parcel-cache
+example
+src
+.github

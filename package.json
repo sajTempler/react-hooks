@@ -1,8 +1,8 @@
 {
   "name": "@sajtempler/react-hooks",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Treeshakable, modular, usefull React hooks set",
-  "browser": "src/index.min.js",
+  "browser": "./dist/index.min.js",
   "scripts": {
     "example": "parcel --dist-dir example/dist example/index.html",
     "build": "esbuild src/index.js --bundle --minify --sourcemap --external:react --outfile=dist/index.min.js"

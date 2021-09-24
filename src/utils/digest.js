@@ -11,7 +11,6 @@ const _digest = async (message) => {
 };
 
 /**
- * 
  * @param {string} input 
  * @returns {{ color: string, backgroundColor: string }}
  */

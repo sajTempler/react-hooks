@@ -1,5 +1,3 @@
-import { useColorPair } from "./hooks.js";
+import { useColorPair } from "./hooks/useColorPair.js";
 
 export { useColorPair };
-
-export default useColorPair;

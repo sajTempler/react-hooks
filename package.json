@@ -1,9 +1,8 @@
 {
   "name": "@sajtempler/react-hooks",
   "version": "1.0.1",
-  "description": "Treeshakable, modular, usefull React hooks set",
+  "description": "Usefull React hooks set",
   "browser": "./dist/index.min.js",
-  "main": "./dist/cjs/index.min.js",
   "module": "./dist/es/index.min.js",
   "scripts": {
     "example": "parcel --dist-dir example/dist example/index.html",
@@ -13,7 +12,8 @@
   "keywords": [
     "react",
     "hooks",
-    "treeshakable"
+    "colors",
+    "contrast"
   ],
   "author": "Szymon Bury",
   "license": "ISC",

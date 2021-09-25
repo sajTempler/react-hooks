@@ -4,10 +4,14 @@
   "description": "Usefull React hooks set",
   "browser": "./dist/index.min.js",
   "module": "./dist/es/index.min.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "example": "parcel --dist-dir example/dist example/index.html",
     "build:es": "esbuild src/index.js --bundle --minify --sourcemap --external:react --outfile=dist/index.min.js",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "jest"
   },
   "keywords": [
     "react",
@@ -21,8 +25,12 @@
     "react": ">=16.8.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.5",
+    "babel-jest": "^27.2.1",
+    "jest": "^27.2.1",
     "parcel": "^2.0.0-rc.0",
     "react-dom": "^17.0.2",
     "rollup": "^2.57.0",

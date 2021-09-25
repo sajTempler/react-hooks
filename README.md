@@ -31,3 +31,7 @@ const App = () => {
 add two more "!!"
 
 ![image](https://user-images.githubusercontent.com/7117333/134502432-77899335-fbfc-4f2d-b088-332728341eae.png)
+
+#### Development
+
+Running tests requires `node >= 16` due to `crypto.webcrypto` for SHA-1 digest.

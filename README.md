@@ -1,6 +1,6 @@
 # Useful React hooks
 
-- [useColorPair()](https://github.com/sajTempler/react-hooks#usecolorpair)
+- [useColorPair()](https://github.com/sajTempler/react-hooks#usecolorpair) - generate background color and pick text color with correct contrast, from any string input
 
 
 # Installation
@@ -19,7 +19,7 @@ yarn add @sajtempler/react-hooks
 
 ### useColorPair
 
-Generates color for background and calculates text color to have correct contrast from any string input.
+Generate background color and pick text color with correct contrast, from any string input.
 
 ```js
 import { useColorPair } from "@sajtempler/react-hooks";

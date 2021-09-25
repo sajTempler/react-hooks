@@ -15,6 +15,8 @@ or
 yarn add @sajtempler/react-hooks
 ```
 
+# Usage
+
 ### useColorPair
 
 Generates color for background and calculates text color to have correct contrast from any string input.

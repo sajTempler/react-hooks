@@ -1,3 +1,5 @@
+[![Build and Test](https://github.com/sajTempler/react-hooks/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/sajTempler/react-hooks/actions/workflows/build-and-test.yml)
+
 # Useful React hooks
 
 - [useColorPair()](https://github.com/sajTempler/react-hooks#usecolorpair) - generate background color and pick text color with correct contrast, from any string input

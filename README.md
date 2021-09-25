@@ -6,7 +6,7 @@
 # Installation
 
 ```
-npm i -S @sajtempler/react-hooks
+npm i @sajtempler/react-hooks
 ```
 
 or

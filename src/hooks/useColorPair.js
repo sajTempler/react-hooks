@@ -9,6 +9,7 @@ import { getColors } from "../utils/digest.js";
  * @returns {{ color: string, backgroundColor: string }}
  */
 export const useColorPair = (input) => {
+  let componentMounted = true;
   const [{ color, backgroundColor }, setColors] = useState({
     color: "initial",
     backgroundColor: "initial",
@@ -18,16 +19,23 @@ export const useColorPair = (input) => {
     if (!!input) {
       const calculate = async () => {
         const { color, backgroundColor } = await getColors(input);
-        setColors({ color, backgroundColor });
+        if (componentMounted) {
+          setColors({ color, backgroundColor });
+        }
       };
 
       calculate();
     } else {
-      setColors({
-        color: "initial",
-        backgroundColor: "initial",
-      });
+      if (componentMounted) {
+        setColors({
+          color: "initial",
+          backgroundColor: "initial",
+        });
+      }
     }
+    return () => {
+      componentMounted = false;
+    };
   }, [input]);
 
   return {

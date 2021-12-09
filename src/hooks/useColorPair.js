@@ -18,8 +18,8 @@ export const useColorPair = (input) => {
   useEffect(() => {
     if (!!input) {
       const calculate = async () => {
-        const { color, backgroundColor } = await getColors(input);
         if (componentMounted) {
+          const { color, backgroundColor } = await getColors(input);
           setColors({ color, backgroundColor });
         }
       };

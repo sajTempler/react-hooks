@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import { getColors } from "../utils/digest.js";
 
+const _colorPairMap = new Map();
+
 /**
  * Generates background color based on SHA-1 hashed string input and
  * corresponding contrast appropriet text color (using sRGB Luma method)
@@ -19,7 +21,17 @@ export const useColorPair = (input) => {
     if (!!input) {
       const calculate = async () => {
         if (componentMounted) {
-          const { color, backgroundColor } = await getColors(input);
+          if (!_colorPairMap.has(input)) {
+            const { color, backgroundColor } = await getColors(input ?? "");
+            _colorPairMap.set(
+              input,
+              JSON.stringify({ color, backgroundColor })
+            );
+          }
+
+          const { color, backgroundColor } = JSON.parse(
+            _colorPairMap.get(input)
+          );
           setColors({ color, backgroundColor });
         }
       };

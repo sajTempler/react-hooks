@@ -1,6 +1,6 @@
 {
   "name": "@sajtempler/react-hooks",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Usefull React hooks set",
   "browser": "./dist/index.min.js",
   "module": "./dist/es/index.min.js",
